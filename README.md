@@ -9,12 +9,11 @@
 #### 3. /nadajodznake id numer
 #### 4. Uzyj to w jakimś skrypcie np. na odznake 
 
-function wezNumer(source)
+**function wezNumer(source)
     local identifier = GetPlayerIdentifiers(source)[1]
     local result = MySQL.Sync.fetchAll("SELECT * FROM numery WHERE identifier = @identifier", {['@identifier'] = identifier})
     if result[1] ~= nil then
         local identity = result[1]
-
         return {
             steam = identity['identifier'],
             numer = identity['number']
@@ -22,7 +21,7 @@ function wezNumer(source)
     else
         return nil
     end
-end
+end**
 
 ##### Znane bugi:
 
