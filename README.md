@@ -26,4 +26,4 @@ end
 ##### Znane bugi:
 
 ###### 2 osoby mogą mieć ten sam numer odznaki
-###### Ta sama osoba moze mieć dwie odznaki
+
