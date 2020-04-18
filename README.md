@@ -8,8 +8,8 @@
 #### 2. Wystartuj
 #### 3. /nadajodznake id numer
 #### 4. Uzyj to w jakimś skrypcie np. na odznake 
+
 function wezNumer(source)
-	
     local identifier = GetPlayerIdentifiers(source)[1]
     local result = MySQL.Sync.fetchAll("SELECT * FROM numery WHERE identifier = @identifier", {['@identifier'] = identifier})
     if result[1] ~= nil then
