@@ -4,10 +4,10 @@
 
 -- Jak tego uzyć ?
 
-1. Wrzuc do DB
-2. Wystartuj
-3. /nadajodznake id numer
-4. Uzyj to w jakimś skrypcie np. na odznake 
+#### 1. Wrzuc do DB
+#### 2. Wystartuj
+#### 3. /nadajodznake id numer
+#### 4. Uzyj to w jakimś skrypcie np. na odznake 
 function wezNumer(source)
 	
     local identifier = GetPlayerIdentifiers(source)[1]
@@ -23,3 +23,8 @@ function wezNumer(source)
         return nil
     end
 end
+
+##### Znane bugi:
+
+###### 2 osoby mogą mieć ten sam numer odznaki
+###### Ta sama osoba moze mieć dwie odznaki
